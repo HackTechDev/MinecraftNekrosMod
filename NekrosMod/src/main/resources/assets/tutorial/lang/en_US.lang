@@ -6,3 +6,8 @@ item.tutorial_spade.name=Tutorial Shovel
 item.tutorial_hoe.name=Tutorial Hoe
 item.tutorial_sword.name=Tutorial Sword
 item.tutorial_multitool.name=Tutorial Multitool
+
+item.tutorial_helmet.name=Tutorial Helmet
+item.tutorial_chestplate.name=Tutorial Chestplate
+item.tutorial_leggings.name=Tutorial Leggings
+item.tutorial_boots.name=Tutorial Boots
