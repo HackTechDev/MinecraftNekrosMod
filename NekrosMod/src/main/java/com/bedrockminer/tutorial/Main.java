@@ -11,7 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
 
-	public static final String MODID = "nekros";
+	public static final String MODID = "tutorial";
 	public static final String MODNAME = "Nekros Mod";
 	public static final String VERSION = "0.0.1";
 

@@ -10,7 +10,7 @@ import org.lwjgl.opengl.GL11;
 public class RenderScorpioid extends RenderLiving {
 
 	private static final ResourceLocation texture = new ResourceLocation(
-			"realmsofchaos:textures/entity/scorpioid.png");
+			"tutorial:textures/entity/scorpioid.png");
 
 	public RenderScorpioid() {
 		super(new ModelScorpioid(), 0.75f);
