@@ -21,4 +21,10 @@ public class ClientProxy extends CommonProxy {
 		super.postInit(e);
 	}
 
+	public static void init() {
+		System.out.println("[Realms of Chaos] Registering Renderers");
+
+		Renderers.init();
+	}
+
 }

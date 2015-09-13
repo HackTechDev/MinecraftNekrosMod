@@ -22,7 +22,13 @@ public class Main {
 				serverSide="com.bedrockminer.tutorial.ServerProxy")
 	public static CommonProxy proxy;
 
-
+	@EventHandler
+	public void preInitMod(FMLPreInitializationEvent event)
+	{
+		Entities.preinit();
+		ClientProxy.init();
+	}
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		proxy.preInit(e);
