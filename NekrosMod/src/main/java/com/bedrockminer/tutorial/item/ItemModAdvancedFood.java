@@ -14,8 +14,8 @@ import com.bedrockminer.tutorial.Main;
 
 public class ItemModAdvancedFood extends ItemFood {
 
-	private List<PotionEffect> effects = new ArrayList<>();
-	private List<Double> propabilities = new ArrayList<>();
+	private List<PotionEffect> effects = new ArrayList<PotionEffect>();
+	private List<Double> propabilities = new ArrayList<Double>();
 
 	public ItemModAdvancedFood(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite) {
 		super(healAmount, saturationModifier, wolvesFavorite);

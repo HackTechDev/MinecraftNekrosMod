@@ -26,7 +26,6 @@ public class Main {
 	public void preInitMod(FMLPreInitializationEvent event)
 	{
 		Entities.preinit();
-		ClientProxy.init();
 	}
 	
 	@EventHandler

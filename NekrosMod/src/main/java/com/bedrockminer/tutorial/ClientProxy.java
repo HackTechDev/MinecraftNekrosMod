@@ -13,18 +13,14 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void init(FMLInitializationEvent e) {
-		super.init(e);
+		System.out.println("[Realms of Chaos] Registering Renderers");
+		Renderers.init();
+
 	}
 
 	@Override
 	public void postInit(FMLPostInitializationEvent e) {
 		super.postInit(e);
-	}
-
-	public static void init() {
-		System.out.println("[Realms of Chaos] Registering Renderers");
-
-		Renderers.init();
 	}
 
 }
