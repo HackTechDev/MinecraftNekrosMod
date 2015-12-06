@@ -19,6 +19,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
+
+import com.bedrockminer.tutorial.command.SampleCommand;
+
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
 
@@ -55,6 +59,16 @@ public class Main {
 		proxy.postInit(e);
 	}
 
+     @EventHandler
+      public void serverLoad(FMLServerStartingEvent event)
+      {
+        event.registerServerCommand(new SampleCommand());
+      }
+
+
+    /*
+     * Add recipes
+     */
 
     private void addRecipes() 
     {
