@@ -21,7 +21,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-import com.bedrockminer.tutorial.command.SampleCommand;
+import com.bedrockminer.tutorial.command.ProcedureCommand;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
@@ -62,7 +62,7 @@ public class Main {
      @EventHandler
       public void serverLoad(FMLServerStartingEvent event)
       {
-        event.registerServerCommand(new SampleCommand());
+        event.registerServerCommand(new ProcedureCommand());
       }
 
 

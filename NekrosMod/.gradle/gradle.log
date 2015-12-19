@@ -10,11 +10,11 @@
 :apiClasses UP-TO-DATE
 :sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /home/util01/JEUX/MINECRAFT.dev/MinecraftNekrosMod/NekrosMod/build/sources/java/com/bedrockminer/tutorial/command/SampleCommand.java uses unchecked or unsafe operations.
+Note: /home/nekrofage/JEUX/MINECRAFT.dev/MinecraftNekrosMod/NekrosMod/build/sources/java/com/bedrockminer/tutorial/command/ProcedureCommand.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :compileTestJava UP-TO-DATE
@@ -23,7 +23,7 @@ Note: Recompile with -Xlint:unchecked for details.
 :test UP-TO-DATE
 :extractMcpData UP-TO-DATE
 :getVersionJson
-:extractUserDev UP-TO-DATE
+:extractUserDev
 :genSrgs SKIPPED
 :reobf
 :assemble
@@ -32,4 +32,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 12.11 secs
+Total time: 30.703 secs

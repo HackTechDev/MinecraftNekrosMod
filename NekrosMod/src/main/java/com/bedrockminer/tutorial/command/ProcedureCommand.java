@@ -7,28 +7,28 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 
 /*
- * Add sample command
+ * Add procedure command
  */
 
-public class SampleCommand implements ICommand
+public class ProcedureCommand implements ICommand
 {
   private List aliases;
-  public SampleCommand()
+  public ProcedureCommand()
   {
     this.aliases = new ArrayList();
-    this.aliases.add("sample");
+    this.aliases.add("procedure");
   }
 
   @Override
   public String getCommandName()
   {
-    return "sample";
+    return "procedure";
   }
 
   @Override
   public String getCommandUsage(ICommandSender icommandsender)
   {
-    return "sample <text>";
+    return "procedure <text>";
   }
 
   @Override
@@ -46,7 +46,7 @@ public class SampleCommand implements ICommand
       return;
     }
    
-    icommandsender.addChatMessage(new ChatComponentText("Sample: [" + astring[0] + "]"));
+    icommandsender.addChatMessage(new ChatComponentText("Procedure: [" + astring[0] + "]"));
    
   }
 
