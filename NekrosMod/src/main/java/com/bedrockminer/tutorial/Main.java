@@ -18,10 +18,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.common.MinecraftForge;
 
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
 import com.bedrockminer.tutorial.command.ProcedureCommand;
+import com.bedrockminer.tutorial.command.BlockFillCommand;
+import com.bedrockminer.tutorial.command.BlockFillerPositionSelector;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
@@ -51,6 +54,8 @@ public class Main {
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
+        MinecraftForge.EVENT_BUS.register(new BlockFillerPositionSelector());
+
 		proxy.init(e);
 	}
 
@@ -63,6 +68,7 @@ public class Main {
       public void serverLoad(FMLServerStartingEvent event)
       {
         event.registerServerCommand(new ProcedureCommand());
+        event.registerServerCommand(new BlockFillCommand());
       }
 
 
