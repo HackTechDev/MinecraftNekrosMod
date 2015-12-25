@@ -16,4 +16,4 @@ Serveur  :  [Cauldron](http://sourceforge.net/projects/cauldron-unofficial/)
 Liens : 
   
 [Bedrockminer tutorials](http://bedrockminer.jimdo.com/modding-tutorials/basic-modding-1-7/)  
-  
+[Minecraft Modding with Forge ](https://github.com/AdityaGupta1/minecraft-modding-book)  
